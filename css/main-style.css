@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  /* background-color: #3e3e3e; */
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-family: "Noto Sans";
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 3em;
+}
+
+.navbar ul li {
+  letter-spacing: .1rem;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navbar ul li a{
+  color: #000;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.navbar ul li:nth-child(1) a {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins";
+}
+
+/* Section 1 */
+
+.section1 {
+  display: flex;
+}
+
+.section1 .text-and-navigation {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 .text-and-navigation .text span:first-child {
+  font-size: 60px;
+  color: #ccc;
+}
+
+.section1 .text-and-navigation .text span:last-child {
+  font-size: 55px;
+}
+
+.section1 .text-and-navigation .navigation button {
+  padding: 20px;
+  border: 1px solid rgb(242,242,242);
+  border-radius: 4px;
+}
+
+.section1 .text-and-navigation .navigation button:first-child {
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+.section1 .text-and-navigation .navigation button:last-child {
+  margin-left: 5px;
+  background-color: rgb(249,249,249);
+}
+
+.section1 .image {
+  flex: 6;
+}
+
+.section1 .image img {
+  width: 96%;
+}
+
+/* Reponsive */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 0;
+  }
+  .navbar ul {
+    gap: 1em;
+  }
+  .navbar ul li {
+    font-size: 11px;
+  }
+}
