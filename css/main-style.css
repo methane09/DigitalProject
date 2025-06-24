@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --gray: rgb(189,189,189);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +24,8 @@ body {
 
 .navbar {
   display: flex;
+  max-width: 90%;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
@@ -55,7 +61,7 @@ body {
 
 /* Container */
 .container {
-  max-width: 96%;
+  max-width: 85%;
   height: auto;
   margin: 0 auto;
   font-family: "Poppins";
@@ -65,6 +71,7 @@ body {
 
 .section1 {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .section1 .text-and-navigation {
@@ -132,6 +139,105 @@ body {
   box-shadow: 2px -2px 3px rgba(0,0,0,.2);
 }
 
+/* Container >> Section 2 */
+
+.section2 {
+  display: flex;
+  height: 70vh;
+  background-color: rgb(250,250,250);
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.section2 .image {
+  flex: 6;
+  padding: 20px 0 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section2 .image .img1,
+.section2 .image .img2,
+.section2 .image .img3 {
+  width: 270px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.section2 .image .img1 {
+  height: 265px;
+  position: absolute;
+}
+
+.section2 .image .img2 {
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+}
+
+.section2 .image .img3 {
+  height: 345px;
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translateY(-50%);
+}
+
+.section2 .image .img1 img,
+.section2 .image .img2 img,
+.section2 .image .img3 img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.section2 .text {
+  flex: 4;
+  position: relative;
+}
+
+.section2 .text h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--gray);
+}
+
+.section2 .text a button {
+  position: absolute;
+  bottom: 20px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: border .3s ease;
+}
+
+.section2 .text a button:hover {
+  border: 1px solid #3e3e3e;
+}
+
+/* Container >> Section3 */
+
+.section3 h1 {
+  color: var(--gray);
+}
+
+.section3 .text {
+  display: flex;
+}
+
+.section3 .text .text1,
+.section3 .text .text2 {
+  flex: 1;
+  display: flex;
+}
+
+.section3 .text .text1 h1,
+.section3 .text .text2 h1 {
+  font-size: 10rem;
+  color: var(--gray);
+}
 /* Reponsive */
 
 @media (max-width: 600px) {

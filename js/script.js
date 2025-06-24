@@ -1,6 +1,6 @@
 const btnRight = document.querySelector('.btn__arrow--right');
 const btnLeft = document.querySelector('.btn__arrow--left');
-const images = document.querySelectorAll('.image img');
+const images = document.querySelectorAll('#project-slider img');
 const pageSpan = document.querySelector('.navigation-page span:first-child');
 
 let currentIndex = 0;
